@@ -1,0 +1,95 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #266dc0;
+    color: white;
+    letter-spacing: 0.075rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+span{
+    font-size: 1rem;
+}
+
+form{
+     padding: 1.5rem;
+ }
+
+#formDescriptionField{
+    background-color: rgba(11,52,192,0.91);
+}
+
+#formDescriptionText{
+    padding: 1.5rem;
+    text-align: justify;
+}
+
+#formWrapper{
+    background-color: rgba(2,0,143,0.91);
+}
+
+#formWrapperOutline{
+     padding: 0;
+ }
+
+#submitButton{
+    background-color: rgba(0,176,255,0.91);
+    border-radius: 0 !important;
+    font-size: 1.25rem;
+}
+
+#submitRow{
+    padding-top: 0.75rem;
+}
+
+#secondRow{
+    border-radius: 0.5rem;
+}
+
+.form-control{
+    border-radius: 0 !important;
+}
+#hiddenUntilRadio1{
+    display: none;
+}
+
+#hiddenUntilRadio2{
+    display: none;
+}
+
+#otherTextWrapper{
+    display: none;
+}
+
+.form-check-input{
+    margin-left: 1rem !important;
+}
+
+.container{
+
+}
+
+#heading{
+    margin: 2rem 0 2rem 0;
+    text-align: center
+}
+
+#ageError, #emailError{
+    color: red;
+    font-size: 1rem;
+}
+
+.form-check{
+    padding-left: 0;
+}
+
+.placeholder{
+    height: 5rem;
+}
+footer{
+    text-align: center;
+}
+
+.checks{
+margin-left: 3rem;
+}

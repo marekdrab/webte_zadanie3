@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="../scripts/jquery/jquery.js"></script>
+    <script src="../scripts/bootstrap/bootstrap.js"></script>
+    <script src="../scripts/script.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 justify-content-center" id="heading">
+            <h1>Zadanie 3</h1>
+        </div>
+    </div>
+    <div class="row" id="secondRow">
+        <div class="col-md-6" id="formDescriptionField">
+            <div id="formDescriptionText">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua erat volutpat.</p>
+            </div>
+        </div>
+        <div class="col-md-6 justify-content-center" id="formWrapperOutline">
+            <div id="formWrapper">
+                <form name="car">
+                    <input type="hidden" name="Marek Dráb">
+                    <div class="form-group">
+                        <label for="firstName">Meno*</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Meno"
+                               title="Zadajte svoje krstné meno" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Priezvisko*</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Priezvisko"
+                               title="Zadajte svoje priezvisko" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthDate">Dátum narodenia*</label>
+                        <input type="date" class="form-control" id="birthDate" title="Zadajte svoj dátum narodenia"
+                               required onchange="ageCalculator()">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Vek</label>
+                        <input type="number" class="form-control" id="age" placeholder="Vek" title="Zadajte svoj vek"
+                            onblur="ageValidator()">
+                        <div id="ageError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Emailová adresa*</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email"
+                               title="Zadajte svoju emailovú adresu" required onblur="validateEmail()">
+                        <div id="emailError"></div>
+
+                    </div>
+                    <div class="form-group">
+                        <label>Vlastníte auto?</label><br>
+
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label" for="Radio1">Áno</label>
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Radio1"
+                                   value="" onclick="optionYes()">
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label class="form-check-label" for="Radio2">Nie</label>
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Radio2"
+                                   value="" onclick="optionNo()">
+                        </div>
+                    </div>
+                    <div id="hiddenUntilRadio1">
+                        <div class="form-check">
+                            <label>Vyberte typ auta, na ktorom ste jazdili</label><br>
+                            <div class="form-group">
+                                <input class="form-check-input" type="checkbox" id="check1">
+                                <label class="form-check-label checks" for="check1">Sedan</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-check-input" type="checkbox" id="check2">
+                                <label class="form-check-label checks" for="check2">SUV</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-check-input" type="checkbox" id="check3">
+                                <label class="form-check-label checks" for="check3">Coupe</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-check-input" type="checkbox" value=""
+                                       onclick="otherCheck()" id="other">
+                                <label class="form-check-label checks" for="other">Ine</label>
+                            </div>
+                            <div class="form-group" id="otherTextWrapper">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="level1">Kontinent</label><br>
+                            <select id="level1"></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="level2">Krajina</label><br>
+                            <select id="level2"></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="level3">Znacka</label><br>
+                            <select id="level3"></select>
+                        </div>
+                        <script src="../scripts/script2.js"></script>
+
+                    </div>
+                    <div class="form-group" id="hiddenUntilRadio2">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <span>Políčka označené * sú povinné pre odoslanie formulára</span>
+                    </div>
+                    <div class="row justify-content-center" id="submitRow">
+                        <button class="btn btn-primary" id="submitButton" onclick="sendMail()">Odoslať</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="placeholder"></div>
+<footer> © Marek Dráb </footer>
+<script src="../scripts/script.js"></script>
+</body>
+</html>
