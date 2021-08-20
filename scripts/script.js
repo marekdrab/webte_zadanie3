@@ -62,7 +62,7 @@ function validateEmail(){
 }
 
 function sendMail(){
-    window.open('mailto:feistu04@gmail.com?subject=Marek Drab&body='
+    window.open('mailto:?subject=Marek Drab&body='
         + 'meno= ' + document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value
         + ' datum narodenia= '+document.getElementById('birthDate').value + ' '
         + 'vek= ' + document.getElementById('age').value  + ' '
